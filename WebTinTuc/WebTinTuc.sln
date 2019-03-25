@@ -3,9 +3,32 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.489
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Web", "1.Web", "{15DCAAB3-CB85-4004-AB1E-4F53C6E528A6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Services", "2.Services", "{DFC268B4-F285-4528-B276-355B94E15B3F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Data", "3.Data", "{2CC18893-E161-431B-8AD6-CC20858B8F8F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.Cross", "4.Cross", "{F93C4923-1F73-4D89-B904-74D06CC40A19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebTin", "WebTin\WebTin.csproj", "{85FD0715-18C4-4853-8E93-5FA004AB5DAA}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{85FD0715-18C4-4853-8E93-5FA004AB5DAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85FD0715-18C4-4853-8E93-5FA004AB5DAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85FD0715-18C4-4853-8E93-5FA004AB5DAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85FD0715-18C4-4853-8E93-5FA004AB5DAA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{85FD0715-18C4-4853-8E93-5FA004AB5DAA} = {15DCAAB3-CB85-4004-AB1E-4F53C6E528A6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D39C0CBF-E467-4D33-B5D0-D9389E42C5B2}
