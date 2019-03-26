@@ -13,6 +13,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.Cross", "4.Cross", "{F93C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebTin", "WebTin\WebTin.csproj", "{85FD0715-18C4-4853-8E93-5FA004AB5DAA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebTin.Data", "WebTin.Data\WebTin.Data.csproj", "{19AE7D42-4D42-4CCD-B867-422D4700A463}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebTin.core", "WebTin.core\WebTin.core.csproj", "{29B51316-C9D0-4324-9BB5-5D523302D4CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebTin.service", "WebTin.service\WebTin.service.csproj", "{B80B20EF-A64C-4EF7-BFD2-7ABD9900B291}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,12 +29,27 @@ Global
 		{85FD0715-18C4-4853-8E93-5FA004AB5DAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{85FD0715-18C4-4853-8E93-5FA004AB5DAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{85FD0715-18C4-4853-8E93-5FA004AB5DAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19AE7D42-4D42-4CCD-B867-422D4700A463}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19AE7D42-4D42-4CCD-B867-422D4700A463}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19AE7D42-4D42-4CCD-B867-422D4700A463}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19AE7D42-4D42-4CCD-B867-422D4700A463}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29B51316-C9D0-4324-9BB5-5D523302D4CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29B51316-C9D0-4324-9BB5-5D523302D4CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29B51316-C9D0-4324-9BB5-5D523302D4CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29B51316-C9D0-4324-9BB5-5D523302D4CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B80B20EF-A64C-4EF7-BFD2-7ABD9900B291}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B80B20EF-A64C-4EF7-BFD2-7ABD9900B291}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B80B20EF-A64C-4EF7-BFD2-7ABD9900B291}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B80B20EF-A64C-4EF7-BFD2-7ABD9900B291}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{85FD0715-18C4-4853-8E93-5FA004AB5DAA} = {15DCAAB3-CB85-4004-AB1E-4F53C6E528A6}
+		{19AE7D42-4D42-4CCD-B867-422D4700A463} = {2CC18893-E161-431B-8AD6-CC20858B8F8F}
+		{29B51316-C9D0-4324-9BB5-5D523302D4CA} = {F93C4923-1F73-4D89-B904-74D06CC40A19}
+		{B80B20EF-A64C-4EF7-BFD2-7ABD9900B291} = {DFC268B4-F285-4528-B276-355B94E15B3F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D39C0CBF-E467-4D33-B5D0-D9389E42C5B2}
