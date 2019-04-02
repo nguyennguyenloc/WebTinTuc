@@ -4,6 +4,7 @@ namespace WebTin.Data.Entities
     using System.Data.Entity;
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Linq;
+    using System.Collections.Generic;
 
     public partial class DefaultDbContext : DbContext
     {
@@ -23,6 +24,7 @@ namespace WebTin.Data.Entities
         public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
         public virtual DbSet<User> Users { get; set; }
         public virtual DbSet<UserRoleRelationship> UserRoleRelationships { get; set; }
+        public IEnumerable<object> UserId { get; internal set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

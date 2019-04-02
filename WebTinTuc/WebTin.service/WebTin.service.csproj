@@ -44,5 +44,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserService.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WebTin.core\WebTin.core.csproj">
+      <Project>{29B51316-C9D0-4324-9BB5-5D523302D4CA}</Project>
+      <Name>WebTin.core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WebTin.Data\WebTin.Data.csproj">
+      <Project>{19AE7D42-4D42-4CCD-B867-422D4700A463}</Project>
+      <Name>WebTin.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

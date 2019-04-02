@@ -1,33 +1,39 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using WebTin.Data.Entities;
 
 namespace WebTin.Data.DAL
 {
-    public class UserDAL
-    {
-        private DefaultDbContext context = new DefaultDbContext();
+	class PostRateDAL
+	{
 
-        public User GetByUsername(string username)
+		private DefaultDbContext context = new DefaultDbContext();
+
+        public PostRate GetById(long Id)
         {
             //Get from database
-            var user = context.Users
-                .Where(i => i.Username == username && i.IsDeleted == false)
+            var postRate = context.PostRates
+                .Where(i => i.Id == Id)//&& i.IsDeleted == false
                 .FirstOrDefault();
-            return user;
+            return postRate;
         }
 
-        public bool Update(User model)
+        public bool Update(PostRate model)
         {
             try
             {
-                //Get item user with Id from database
-                var item = context.Users.Where(i => i.Id == model.Id).FirstOrDefault();
+                //Get item PostRate with Id from database
+                var item = context.PostRates.Where(i => i.Id == model.Id).FirstOrDefault();
 
                 //Set value item with value from model
-                item.Username = model.Username;
+                item.Id = model.Id;
+                item.PostId = model.PostId;
+                item.RatedBy = model.RatedBy;
+                item.Mark = model.Mark;
+                item.RatedTime = model.RatedTime;
 
                 //Save change to database
                 context.SaveChanges();
@@ -39,18 +45,21 @@ namespace WebTin.Data.DAL
             }
         }
 
-        public bool Create(User model)
+        public bool Create(PostRate model)
         {
             try
             {
                 //Initialization empty item
-                var item = new User();
+                var item = new PostRate();
 
                 //Set value for item with value from model
-                item.Username = model.Username;
-
+                item.Id = model.Id;
+                item.PostId = model.PostId;
+                item.RatedBy = model.RatedBy;
+                item.Mark = model.Mark;
+                item.RatedTime = model.RatedTime;
                 //Add item to entity
-                context.Users.Add(item);
+                context.PostRates.Add(item);
                 //Save to database
                 context.SaveChanges();
                 return true;
@@ -66,10 +75,10 @@ namespace WebTin.Data.DAL
             try
             {
                 //Tương tự update
-                var item = context.Users.SingleOrDefault(i => i.Id == id);
+                var item = context.PostRates.SingleOrDefault(i => i.Id == id);
 
                 //Remove item.
-                context.Users.Remove(item);
+                context.PostRates.Remove(item);
 
                 //Change database
                 context.SaveChanges();
