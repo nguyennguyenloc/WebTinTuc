@@ -38,5 +38,15 @@ namespace WebTin.Service
             }
 
         }
+
+        public object LoginByCredential(string username, object password)
+        {
+            throw new NotImplementedException();
+        }
+
+        public object LoginByCredential(object username, object password)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

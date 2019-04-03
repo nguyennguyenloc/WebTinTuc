@@ -21,7 +21,6 @@ namespace WebTin.Data.Entities
         public virtual DbSet<PostRate> PostRates { get; set; }
         public virtual DbSet<Role> Roles { get; set; }
         public virtual DbSet<RoleFunctionRelationship> RoleFunctionRelationships { get; set; }
-        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
         public virtual DbSet<User> Users { get; set; }
         public virtual DbSet<UserRoleRelationship> UserRoleRelationships { get; set; }
         public IEnumerable<object> UserId { get; internal set; }

@@ -16,7 +16,7 @@ namespace WebTin.Data.DAL
 
             //Get from database
             var user = context.Users
-                .Where(i => i.Username == username && i.IsDeleted == false)
+                .Where(i => i.Username == username && (i.IsDeleted == false || i.IsDeleted.Equals(null)))
                 .FirstOrDefault();
             return user;
         }

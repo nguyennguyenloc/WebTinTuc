@@ -6,11 +6,13 @@ using System.Web.Mvc;
 
 namespace WebTin.Areas.Admin.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : AdminBaseController
     {
         // GET: Admin/Home
         public ActionResult Index()
         {
+    
+            
             return View();
         }
     }
