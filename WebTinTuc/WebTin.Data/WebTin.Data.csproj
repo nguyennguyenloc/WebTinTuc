@@ -79,5 +79,11 @@
     </None>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WebTin.core\WebTin.core.csproj">
+      <Project>{29b51316-c9d0-4324-9bb5-5d523302d4ca}</Project>
+      <Name>WebTin.core</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

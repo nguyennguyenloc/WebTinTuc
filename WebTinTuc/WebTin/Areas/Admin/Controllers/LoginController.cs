@@ -21,7 +21,7 @@ namespace WebTin.Areas.Admin.Controllers
             UserService userService = new UserService();
             if (ModelState.IsValid)
             {
-                var login = userService.LoginByCredential(model.Username, model.Password);
+                object login = userService.LoginByCredential(model.Username, model.Password);
                 if (login == null)
                 {
                     ModelState.AddModelError("LoginError", "Đăng nhập không thành công");
